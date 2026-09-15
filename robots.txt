@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-# No Sitemap: line on purpose. Without a sitemap every page is checked with a
-# conditional request, so an edit is always detected. A static sitemap.xml would
-# carry a lastmod that does not move when you edit a page, and sync would take the
-# cheap path and miss the change.
+# Overwritten at build time by .github/workflows/pages.yml, which appends the
+# Sitemap: line. Kept here so the repo is still coherent if someone serves it
+# without the workflow.
+Sitemap: https://vineetr-lab.github.io/kb-sync-test-site/sitemap.xml
