@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# No Sitemap: line on purpose. Without a sitemap every page is checked with a
+# conditional request, so an edit is always detected. A static sitemap.xml would
+# carry a lastmod that does not move when you edit a page, and sync would take the
+# cheap path and miss the change.
